@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.loader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: #4285f4; 
+    border-radius: 50%;
+    animation: bounce 1.2s infinite;
+}
+
+.dot:nth-child(2) {
+    background-color: #ea4335; 
+    animation-delay: 0.3s;
+}
+
+.dot:nth-child(3) {
+    background-color: #fbbc05; 
+    animation-delay: 0.6s;
+}
+
+.dot:nth-child(4) {
+    background-color: #34a853; 
+    animation-delay: 0.9s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}

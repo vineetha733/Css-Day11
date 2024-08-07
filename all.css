@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    background-image: url(https://st2.depositphotos.com/1793519/50734/i/450/depositphotos_507343692-stock-photo-render-abstract-pink-blue-neon.jpg);
+    
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#task1 {
+    background: radial-gradient(circle, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 100%);
+}
+
+#task2 {
+    background: radial-gradient(circle, rgba(0,204,255,1) 0%, rgba(0,0,255,1) 100%);
+}
+
+.title {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    font-family: 'Arial', sans-serif;
+    opacity: 0.8;
+}
